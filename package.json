@@ -1,5 +1,5 @@
 {
-  "name": "04---app-de-cursos",
+  "name": "04-app-de-cursos",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,10 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZapotB/04-App-de-Cursos.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/ZapotB/04-App-de-Cursos/issues"
+  },
+  "homepage": "https://github.com/ZapotB/04-App-de-Cursos#readme",
   "devDependencies": {
     "express": "^5.2.1",
     "nodemon": "^3.1.14"

@@ -3,22 +3,6 @@ import express from 'express'
 const app = express()
 const port = 8000
 
-const cursos= [
-		{
-			id: 1,
-			curso: "JS I"
-		},
-		{
-			id: 2,
-			curso: "JS II"
-		},
-		{
-			id: 3,
-			curso: "JS III"
-		}
-    ]
-
-
 //Usar JSON
 app.use(express.json());
 
@@ -39,13 +23,8 @@ app.post('/cursos',(req,res) => {
 // Rota PUT: Atualiza um curso
 app.put('/cursos/:id',(req,res) => {
 		const id = req.params
-
-        const curso = cursos.filter((curso)=>{
-				return curso.id == id 
-		})
-
-		console.log(curso)
-        res.json(curso)
+		console.log(id)
+    res.send(`Curso com ID ${req.params.id} atualizado.`)
 });
 
 // Rota DELETE: Deleta um curso específico usando um parâmetro (ID)
